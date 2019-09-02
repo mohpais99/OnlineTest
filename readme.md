@@ -1,8 +1,8 @@
-<p align="center"><img src="https://www.erloom.id/img/erloom.png"></p>
+<p align="center"><a href="https://www.erloom.id"><img src="https://www.erloom.id/img/erloom.png"></a></p>
 
 ## Tech Stack
 
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+<p align="center"><a href="https://laravel.com/"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></a></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
