@@ -11,7 +11,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## Tentang Tes
+## About Test
 
 Tes ini bertujuan untuk memasukkan data user beserta urutan fibonacci yang dihubungkan kepada user tersebut.
 
@@ -22,7 +22,7 @@ Tes ini bertujuan untuk memasukkan data user beserta urutan fibonacci yang dihub
 - **[PHP 7.2](https://www.php.net/downloads.php)**
 - **[npm](https://www.npmjs.com/get-npm)**
 
-## Setup Aplikasi
+## Setup Application
 
 - Jalankan `composer install` pada aplikasi untuk menginstall dependency dari composer.
 - Jalankan `php artisan migrate` pada aplikasi untuk menambah table pada Database.
@@ -50,3 +50,16 @@ Aplikasi diharapkan dapat :
 
 - Buatlah logic pada *TestController@store* saat **nama** di-input agar dapat menyimpan hasil fibonacci yang sesuai.
 - Buatlah view pada *index.blade* agar dapat menampilkan seluruh **nama** yang telah di-input beserta bilangan fibonacci yang sesuai.
+
+## Expected Result
+
+| Nama | Angka Fibonacci |
+| ------ | ------ |
+| Test 1 | 1 |
+| Test 2 | 1 | 
+| Test 3 | 2 | 
+| Test 4 | 3 | 
+| Test 5 | 5 | 
+| .... | ... | 
+
+**Notes**: Nama tidak harus sesuai contoh diatas, nama merupakan string yang bebas di-input.
