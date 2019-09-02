@@ -26,7 +26,7 @@ Tes ini bertujuan untuk memasukkan data user beserta urutan fibonacci yang dihub
 
 - Jalankan `composer install` pada aplikasi untuk menginstall dependency dari composer.
 - Jalankan `php artisan migrate` pada aplikasi untuk menambah table pada Database.
-- Jalankan `npm install` pada aplikasi untuk meng-install CSS dan JS.
+- Jalankan `npm install` lalu `npm run development` pada aplikasi untuk meng-install CSS dan JS.
 - `php artisan serve` untuk memulai local enviroment aplikasi ini.
 
 ## Structure
