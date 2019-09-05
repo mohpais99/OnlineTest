@@ -13,21 +13,20 @@
 
 ## About Test
 
-Tes ini bertujuan untuk memasukkan data user beserta urutan fibonacci yang dihubungkan kepada user tersebut.
+Tes ini bertujuan untuk memasukkan data user beserta mengecek input tersebut adalah ganjil / genap.
 
 ## Requirement
 
 - [SQLite](https://www.sqlite.org/index.html)
+- [npm](https://www.npmjs.com/get-npm)
 - **[Composer](https://getcomposer.org/)**
 - **[PHP 7.2](https://www.php.net/downloads.php)**
-- **[npm](https://www.npmjs.com/get-npm)**
 
 ## Setup Application
 
-- Jalankan `composer install` pada aplikasi untuk menginstall dependency dari composer.
-- Jalankan `php artisan migrate` pada aplikasi untuk menambah table pada Database.
-- Jalankan `npm install` lalu `npm run development` pada aplikasi untuk meng-install CSS dan JS.
-- `php artisan serve` untuk memulai local enviroment aplikasi ini.
+- Jalankan `composer install` pada aplikasi untuk menginstall dependency dari composer. ***(Optional)***
+- Jalankan `php artisan migrate` pada aplikasi untuk menambah table pada Database. ***(Optional)***
+- `php artisan serve` untuk memulai local enviroment aplikasi ini. **(Required)**
 
 ## Structure
 
@@ -43,23 +42,23 @@ Tes ini menggunakan aplikasi Laravel dengan struktur :
 Aplikasi diharapkan dapat :
 
 - Input **nama** kedalam database.
-- Setiap **nama** terasosiasi dengan angka yang merupakan urutan bilangan fibonacci, urutan tersebut bertambah dan terasosiasi ke **nama** sesuai dengan data terakhir yang di-input.
+- Setiap **nama** terasosiasi dengan tanda Odd / Even, Odd / Even sesuai dengan urutan **nama** yang di-input (Urutan bisa menggunakan ID, dimulai dari angka 0).
 - View dapat memunculkan seluruh **nama** yang di-input.
 
 ## Problem
 
-- Buatlah logic pada *TestController@store* saat **nama** di-input agar dapat menyimpan hasil fibonacci yang sesuai.
-- Buatlah view pada *index.blade* agar dapat menampilkan seluruh **nama** yang telah di-input beserta bilangan fibonacci yang sesuai.
+- Buatlah logic pada controller *TestController@store* saat **nama** di-input agar dapat menyimpan hasil ganjil / genap yang sesuai.
+- Buatlah logic pada view *index.blade* agar dapat menampilkan seluruh **nama** yang telah di-input beserta hasil ganjil / genap yang sesuai.
 
 ## Expected Result
 
-| Nama | Angka Fibonacci |
-| ------ | ------ |
-| Test 1 | 1 |
-| Test 2 | 1 | 
-| Test 3 | 2 | 
-| Test 4 | 3 | 
-| Test 5 | 5 | 
-| .... | ... | 
+| ID | Nama | Parity (Odd / Even) |
+| ------ | ------ | ------ |
+| 0 | Susan | Even |
+| 1 | Murray | Odd | 
+| 2 | Debra | Even | 
+| 3 | Karen | Odd | 
+| 4 | Pamela | Even | 
+| .... | .... | .... | 
 
 **Notes**: Nama tidak harus sesuai contoh diatas, nama merupakan string yang bebas di-input.

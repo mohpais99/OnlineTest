@@ -18,7 +18,7 @@
 
                 <form action="{{route('store')}}" method="POST">
                     @csrf
-                    <label>Nama : </label> <input type="text" name="nama" />
+                    <label>Name : </label> <input type="text" name="name" />
                     <button class="btn btn-primary" type="submit">Create</button>
                 </form>
 
@@ -30,12 +30,19 @@
                 <table class="table py-3">
                     <thead>
                         <tr>
-                            <th scope="col">Nama</th>
-                            <th scope="col">Angka Fibonacci</th>
+                            <th scope="col">No. ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Parity (Odd/Even)</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- LOGIC HERE -->
+                        <!-- LOGIC START -->
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <!-- LOGIC END -->
                     </tbody>
                 </table>
 
