@@ -62,3 +62,8 @@ Aplikasi diharapkan dapat :
 | .... | .... | .... | 
 
 **Notes**: Nama tidak harus sesuai contoh diatas, nama merupakan string yang bebas di-input.
+
+## Example
+
+![](public/images/Image1.png)
+![](public/images/image2.png)
