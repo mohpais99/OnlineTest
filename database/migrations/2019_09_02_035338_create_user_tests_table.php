@@ -16,7 +16,7 @@ class CreateUserTestsTable extends Migration
         Schema::create('user_tests', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->string('parity');
+            $table->string('parity')->nullable();
             $table->timestamps();
         });
     }
