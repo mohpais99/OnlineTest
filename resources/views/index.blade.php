@@ -24,25 +24,44 @@
 
             </div>
         </div>
+        @if ($message = Session::get('success'))
+          <div class="alert alert-success alert-block">
+            <button type="button" class="close" data-dismiss="alert">×</button> 
+              <strong>{{ $message }}</strong>
+          </div>
+        @endif
+        @if ($message = Session::get('error'))
+          <div class="alert alert-danger alert-block">
+            <button type="button" class="close" data-dismiss="alert">×</button> 
+            <strong>{{ $message }}</strong>
+          </div>
+        @endif
         <div class="row">
             <div class="col-12">
-
                 <table class="table py-3">
                     <thead>
                         <tr>
                             <th scope="col">No. ID</th>
                             <th scope="col">Name</th>
                             <th scope="col">Parity (Odd/Even)</th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- LOGIC START -->
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <!-- LOGIC END -->
+                        @forelse($user as $item)
+                            <tr>
+                                <td>{{$item->id}}</td>
+                                <td>{{$item->name}}</td>
+                                <td>{{$item->parity}}</td>
+                                <td>
+                                    <a href="/delete/{{$item->id}}" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this item?');">Delete</a>
+                                </td>
+                            </tr>
+                            @empty
+                            <tr>
+                                <td align="center" colspan="4"><h1>Tidak ada list</h1></td>
+                            </tr>
+                        @endforelse
                     </tbody>
                 </table>
 

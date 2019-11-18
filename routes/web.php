@@ -13,3 +13,4 @@
 
 Route::get('/', 'TestController@index')->name('index');
 Route::post('/add', 'TestController@store')->name('store');
+Route::get('/delete/{id}', 'TestController@destroy')->name('destroy');
